@@ -16,7 +16,7 @@ const Title = styled.div`
     font-size: 24px;
 `
 const CardPicture = styled.img`
-    
+
 `
 const Message = styled.div`
     font-size: 22px;
@@ -32,7 +32,7 @@ const DevelopmentCard = (props) => {
         <DevelopmentCardWrapper isExpanded={isExpanded} onClick={() => toggleExpanded(!isExpanded)}>
             <Title frameColor={frameColor}>{props.card.name}</Title>
             <CardPicture />
-            {props.card.category === categories.VICTORY_POINT && <Message>{props.card.message}</Message>}
+            {props.card.category === categories.VICTORY_POINT && <Message>1 Victory Point!</Message>}
             <Explanation>{props.card.explanation}</Explanation>
         </DevelopmentCardWrapper>
     );

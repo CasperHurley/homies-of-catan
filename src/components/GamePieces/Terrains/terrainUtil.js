@@ -1,4 +1,5 @@
 import typesOfTerrains from './typesOfTerrain'
+import {randomlyShuffle} from '../../Util/gameUtil';
 
 function buildAllTerrains() {
     let allTerrains = []
@@ -7,7 +8,7 @@ function buildAllTerrains() {
             allTerrains.push(typesOfTerrains[type]);
         }
     })
-    return allTerrains
+    return randomlyShuffle(allTerrains)
 }
 
 export {

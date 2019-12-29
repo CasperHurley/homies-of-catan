@@ -30,31 +30,27 @@ function getFrameColorForCategory(category) {
 const typesOfDevelopmentCards = {
     knightCard: {
         name: "Knight",
-        message: "",
-        explanation: "",
+        explanation: "Move the robber. Steal 1 resource from the owner of a settlement or city adjacent to the robber's new terrain.",
         category: categories.KNIGHT,
         actions: knightCardActions,
         quantity: 14
     },
     monopolyCard: {
         name: "Monopoly",
-        message: "",
-        explanation: "",
+        explanation: "When you play this card, announce 1 type of resource. All other players must give you all of their resources of that type.",
         category: categories.PROGRESS,
         actions: monopolyCardActions,
         quantity: 2
     },
     roadBuildingCard: {
         name: "Road Building",
-        message: "",
-        explanation: "",
+        explanation: "Place 2 new roads as if you had built them.",
         category: categories.PROGRESS,
         actions: roadBuildingCardActions,
         quantity: 2
     },
     yearOfPlentyCard: {
         name: "Year of Plenty",
-        message: "",
         explanation: "",
         category: categories.VICTORY_POINT,
         actions: yearOfPlentyCardActions,
@@ -62,7 +58,6 @@ const typesOfDevelopmentCards = {
     },
     chapelCard: {
         name: "Chapel",
-        message: "",
         explanation: "",
         category: categories.VICTORY_POINT,
         actions: victoryPointCardActions,
@@ -70,7 +65,6 @@ const typesOfDevelopmentCards = {
     },
     libraryCard: {
         name: "Library",
-        message: "",
         explanation: "",
         category: categories.VICTORY_POINT,
         actions: victoryPointCardActions,
@@ -78,7 +72,6 @@ const typesOfDevelopmentCards = {
     },
     marketCard: {
         name: "Market",
-        message: "",
         explanation: "",
         category: categories.VICTORY_POINT,
         actions: victoryPointCardActions,
@@ -86,7 +79,6 @@ const typesOfDevelopmentCards = {
     },
     universityCard: {
         name: "University",
-        message: "",
         explanation: "",
         category: categories.VICTORY_POINT,
         actions: victoryPointCardActions,
