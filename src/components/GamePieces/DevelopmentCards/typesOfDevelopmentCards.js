@@ -94,4 +94,4 @@ const typesOfDevelopmentCards = {
     }
 }
 
-export {getFrameColorForCategory, typesOfDevelopmentCards}
+export {categories, getFrameColorForCategory, typesOfDevelopmentCards}

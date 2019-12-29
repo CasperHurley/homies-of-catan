@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
-import {getFrameColorForCategory} from './typesOfDevelopmentCards'
+import {categories, getFrameColorForCategory} from './typesOfDevelopmentCards'
 
 const DevelopmentCardWrapper = styled.div`
     color: #444;
@@ -16,6 +16,7 @@ const Title = styled.div`
     font-size: 24px;
 `
 const CardPicture = styled.img`
+    
 `
 const Message = styled.div`
     font-size: 22px;
@@ -30,8 +31,8 @@ const DevelopmentCard = (props) => {
     return (
         <DevelopmentCardWrapper isExpanded={isExpanded} onClick={() => toggleExpanded(!isExpanded)}>
             <Title frameColor={frameColor}>{props.card.name}</Title>
-            {/* <CardPicture /> */}
-            <Message>{props.card.message}</Message>
+            <CardPicture />
+            {props.card.category === categories.VICTORY_POINT && <Message>{props.card.message}</Message>}
             <Explanation>{props.card.explanation}</Explanation>
         </DevelopmentCardWrapper>
     );

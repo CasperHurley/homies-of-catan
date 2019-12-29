@@ -1,5 +1,5 @@
 import typesOfResources from '../Resources/typesOfResources';
-
+// add roads and settlements/cities somehow
 const typesOfTerrains = {
     fieldTerrain: {
         name: "Field",
@@ -28,7 +28,7 @@ const typesOfTerrains = {
     },
     desertTerrain: {
         name: "Desert",
-        resource: null,
+        resource: typesOfResources.desertResource,
         quantity: 1
     }
 }
